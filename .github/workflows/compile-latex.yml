@@ -1,0 +1,35 @@
+name: Build LaTeX Resume
+
+on:
+  push:
+    branches:
+      - '**'
+    paths:
+      - '**.tex'
+      - '.github/workflows/compile-latex.yml'
+  pull_request:
+    branches:
+      - '**'
+    paths:
+      - '**.tex'
+  workflow_dispatch:
+
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: resume.tex
+          latexmk_use_xelatex: false
+
+      - name: Upload PDF as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: resume-pdf
+          path: resume.pdf
