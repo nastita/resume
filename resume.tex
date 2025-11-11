@@ -1,0 +1,101 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Professional Resume for Eduardo Sacco
+% Using moderncv class for a clean, professional look
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+% moderncv themes
+\moderncvstyle{banking}  % style options: 'casual', 'classic', 'banking', 'oldstyle', 'fancy'
+\moderncvcolor{blue}     % color options: 'blue', 'orange', 'green', 'red', 'purple', 'grey', 'black'
+
+% Character encoding
+\usepackage[utf8]{inputenc}
+
+% Adjust page margins
+\usepackage[scale=0.85]{geometry}
+\setlength{\hintscolumnwidth}{3cm}  % width of the column for dates
+
+% Personal data
+\name{Eduardo}{Sacco}
+\title{Senior Software Engineer / Electronic Engineer}
+\email{saccoeduardo@gmail.com}
+\homepage{nastita.github.io}
+\social[linkedin]{esacco}
+\extrainfo{Argentina}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\makecvtitle
+
+\section{Summary}
+\cvitem{}{Engineer with 6+ years of proven experience in the software development industry. Senior Software Engineer specializing in TypeScript/Node.js, with deep expertise in building highly resilient Blockchain/Web3 backend systems (LUKSO, POAP). Quick learner and thinker who takes ownership of his work and leverages teamwork and expertise to drive impact.}
+
+\section{Work Experience}
+
+\cventry{Apr 2023--Present}{Lead Back End Engineer}{Universal Everything / LUKSO}{Remote, Argentina}{}{
+\begin{itemize}
+\item Developing core LUKSO blockchain services
+\item Improving and maintaining LUKSO Transaction Relayer
+\item Developed blockchain migration one-way bridge
+\item Developing Entitlements/Subscription manager platform to monetize our range of products
+\item Main contributor in The Grid social platform product
+\end{itemize}}
+
+\cventry{Feb 2023--Apr 2023}{Team Lead Software Engineer}{SOUTHWORKS}{Remote, Argentina}{}{
+\begin{itemize}
+\item Maintained and updated backend solutions for a global end-device manager system, responsible for deploying software updates to all 7-Eleven Points of Sale (POS) terminals worldwide
+\item Led an urgent, high-stakes migration from Node 12 to 18 to unblock a critical production environment after a failed deployment and rollback attempt, successfully restoring system stability
+\end{itemize}}
+
+\cventry{Dec 2022--Jan 2023}{Senior Software Engineer}{Halborn}{Remote, Argentina}{}{
+\begin{itemize}
+\item Contributed on the backend for a notary system for the blockchain
+\end{itemize}}
+
+\cventry{Oct 2021--Sep 2022}{Senior Software Engineer}{Proof of Attendance Protocol}{Remote, Argentina}{}{
+\begin{itemize}
+\item Back End Engineer, part of the core developers team in charge of the maintenance and improvement of POAPs core functionality, viewing POAPs, minting them on the Blockchain, and fighting farmers
+\item Developed a new Transaction Relayer service from scratch to abstract and handle resilient blockchain transactions
+\item Fixed a critical nonce management issue in the original system that caused nonces to be skipped, resulting in all subsequent transactions getting stuck
+\item Engineered the Relayer for high-volume event spikes, dramatically improving throughput capacity from approximately 400 transactions per minute to handling 10,000 transactions in 20 seconds
+\item Maintained and optimized the core POAP server codebase and improved its security, maintainability, resiliency, and efficiency
+\end{itemize}}
+
+\cventry{Mar 2021--Oct 2021}{Senior Software Engineer Consultant}{KIN + CARTA}{Remote, Argentina}{}{
+\begin{itemize}
+\item Back End Engineer developing business management app for Magellan Midstream Partners
+\item Developed new web API endpoints to retrieve, process, and present complex business data sets
+\item Designed and implemented a new testing framework
+\item Quickly learned project infrastructure and helped onboard new team members
+\end{itemize}}
+
+\cventry{May 2018--Mar 2021}{Senior Software Engineer}{SOUTHWORKS}{Buenos Aires/Remote, Argentina}{}{
+\begin{itemize}
+\item Fullstack Engineer vendor for Microsoft working on Microsoft Email Orchestrator
+\item Designed and implemented new features autonomously. Took ownership of several crucial pieces of the project
+\item Identified, isolated, diagnosed, and fixed production issues
+\item Led weekly (iteration) planning and backlog grooming. Drove iteration planning meetings with the customer (Microsoft side Product Owner)
+\item Managed fireteam. Signed off pull requests. Analyzed and provided feedback about developers' performance
+\end{itemize}}
+
+\section{Skills}
+
+\cvitem{Technologies}{C\#, .NET, Go, Javascript, TypeScript, Node.js, C, C++, Entity Framework, HTML, Python, React, Express, Nestjs, Nextjs. Learning Solidity}
+\cvitem{Databases}{SQL, NO-SQL, KQL, Postgres, MySQL, SQL Server, Azure Cosmos DB, MongoDB}
+\cvitem{Methodologies}{Agile, Pair programming, TDD}
+\cvitem{Cloud}{Azure, GCP, AWS (AWS Cloud Practitioner certified)}
+\cvitem{Tools}{Azure DevOps, Azure pipelines, Azure Boards, Jira, Git, GitHub}
+
+\section{Education}
+
+\cventry{2019}{Electronic Engineering}{Buenos Aires Institute of Technology}{}{}{
+Specialization in Digital Signal Processing
+}
+
+\cventry{}{English Certifications}{}{}{}{
+FCE, International General Certificate of Secondary Education
+}
+
+\end{document}
